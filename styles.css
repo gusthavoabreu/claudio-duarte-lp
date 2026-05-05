@@ -1393,10 +1393,29 @@ details[open] summary { color: var(--wine); }
   .topbar__nav { display: none; }
   .topbar__cta { margin-left: auto; }
 
-  .hero { padding: 22px 0 40px; }
+  .hero { padding: 18px 0 36px; }
   .hero__rule { padding: 12px 22px; gap: 12px; font-size: 9.5px; }
   .hero__rule span:nth-child(2) { display: none; }
-  .hero__grid { padding: 0 22px; }
+
+  /* mobile: reordenar hero — título → deck → CTAs → imagem → data/local → countdown → prova */
+  .hero__grid {
+    padding: 0 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  .hero__lead-col,
+  .hero__visual { display: contents; }
+
+  .hero .kicker      { order: 1; margin-bottom: 4px; }
+  .hero .display     { order: 2; }
+  .hero__deck        { order: 3; margin: 0; }
+  .hero__cta-row     { order: 4; margin-bottom: 0; }
+  .portrait          { order: 5; transform: none; }
+  .meta-strip        { order: 6; margin: 0; }
+  .countdown         { order: 7; }
+  .hero__proof       { order: 8; }
+
   .meta-strip { grid-template-columns: repeat(2, 1fr); }
   .meta-strip > div:nth-child(2) { border-right: none; }
   .meta-strip > div:nth-child(3) { padding-left: 0; }
