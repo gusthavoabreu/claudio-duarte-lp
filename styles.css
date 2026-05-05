@@ -1370,7 +1370,26 @@ details[open] summary { color: var(--wine); }
    RESPONSIVE
    ========================================================= */
 @media (max-width: 1080px) {
-  .hero__grid { grid-template-columns: 1fr; gap: 40px; }
+  /* hero passa a empilhar e reorganizar: título → deck → CTA → imagem → meta → countdown → prova */
+  .hero__grid {
+    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 32px;
+  }
+  .hero__lead-col,
+  .hero__visual { display: contents; }
+
+  .hero .kicker     { order: 1; align-self: flex-start; }
+  .hero .display    { order: 2; align-self: stretch; }
+  .hero__deck       { order: 3; margin: 0; max-width: 100%; align-self: stretch; }
+  .hero__cta-row    { order: 4; margin: 0; align-self: stretch; }
+  .portrait         { order: 5; transform: none; align-self: stretch; width: 100%; }
+  .meta-strip       { order: 6; margin: 0; width: 100%; align-self: stretch; }
+  .countdown        { order: 7; width: 100%; align-self: stretch; }
+  .hero__proof      { order: 8; align-self: stretch; }
+
   .pastor__grid { grid-template-columns: 1fr; gap: 48px; }
   .lede__grid { grid-template-columns: 1fr; gap: 40px; }
   .venue__grid { grid-template-columns: 1fr; gap: 40px; }
@@ -1397,24 +1416,9 @@ details[open] summary { color: var(--wine); }
   .hero__rule { padding: 12px 22px; gap: 12px; font-size: 9.5px; }
   .hero__rule span:nth-child(2) { display: none; }
 
-  /* mobile: reordenar hero — título → deck → CTAs → imagem → data/local → countdown → prova */
-  .hero__grid {
-    padding: 0 22px;
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-  }
-  .hero__lead-col,
-  .hero__visual { display: contents; }
-
-  .hero .kicker      { order: 1; margin-bottom: 4px; }
-  .hero .display     { order: 2; }
-  .hero__deck        { order: 3; margin: 0; }
-  .hero__cta-row     { order: 4; margin-bottom: 0; }
-  .portrait          { order: 5; transform: none; }
-  .meta-strip        { order: 6; margin: 0; }
-  .countdown         { order: 7; }
-  .hero__proof       { order: 8; }
+  /* tightening do hero no mobile (ordem já vem do breakpoint 1080) */
+  .hero__grid { padding: 0 22px; gap: 22px; }
+  .hero .kicker { margin-bottom: 0; }
 
   .meta-strip { grid-template-columns: repeat(2, 1fr); }
   .meta-strip > div:nth-child(2) { border-right: none; }
