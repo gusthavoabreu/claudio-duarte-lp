@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Fortalecendo Relacionamentos e Família — uma noite com o Pastor Cláudio Duarte em Aparecida de Goiânia. Garanta seu ingresso." />
+  <meta name="theme-color" content="#2A1A12" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Fortalecendo Relacionamentos e Família — Pastor Cláudio Duarte" />
+  <meta property="og:description" content="Uma noite para transformar seu casamento e sua família. Aparecida de Goiânia." />
+  <meta property="og:image" content="https://placehold.co/1200x630/2A1A12/F4ECDB?text=Pastor+Cl%C3%A1udio+Duarte" />
+
+  <title>Fortalecendo Relacionamentos e Família · Pastor Cláudio Duarte · Aparecida de Goiânia</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ============== TOP BAR ============== -->
+  <header class="topbar">
+    <div class="topbar__inner">
+      <a href="#topo" class="topbar__brand">
+        <span class="topbar__mark">CD</span>
+        <span class="topbar__brand-text">
+          <em>Cláudio Duarte</em>
+          <small>ao vivo · Aparecida de Goiânia</small>
+        </span>
+      </a>
+      <nav class="topbar__nav">
+        <a href="#manchete">A noite</a>
+        <a href="#pastor">O pastor</a>
+        <a href="#programacao">Programação</a>
+        <a href="#ingressos">Ingressos</a>
+        <a href="#faq">Dúvidas</a>
+      </nav>
+      <a href="#ingressos" class="btn btn--small btn--wine topbar__cta">Garantir ingresso</a>
+    </div>
+  </header>
+
+  <!-- ============== HERO ============== -->
+  <section id="topo" class="hero">
+    <div class="hero__rule" aria-hidden="true">
+      <span>Nº 01 · Edição Especial</span>
+      <span>Aparecida de Goiânia · Brasil</span>
+      <span>Único · Presencial · Inédito</span>
+    </div>
+
+    <div class="hero__grid">
+      <div class="hero__lead-col">
+        <span class="kicker">
+          <span class="kicker__dot"></span>
+          Noite Editorial · Cláudio Duarte
+        </span>
+
+        <h1 class="display">
+          <span class="display__line reveal" data-delay="0">Fortalecendo</span>
+          <span class="display__line reveal" data-delay="120"><i>Relacionamentos</i></span>
+          <span class="display__line reveal" data-delay="220">e <i>Família</i>.</span>
+        </h1>
+
+        <p class="hero__deck reveal" data-delay="420">
+          Uma noite com o Pastor Cláudio Duarte para rir, refletir e reacender o
+          que realmente importa: o amor dentro de casa.
+        </p>
+
+        <dl class="meta-strip reveal" data-delay="520">
+          <div>
+            <dt>Data</dt>
+            <dd>06 · julho · 2026</dd>
+          </div>
+          <div>
+            <dt>Abertura</dt>
+            <dd>18h30</dd>
+          </div>
+          <div>
+            <dt>Local</dt>
+            <dd>Igreja Esperança Campus</dd>
+          </div>
+          <div>
+            <dt>A partir de</dt>
+            <dd>R$ 150</dd>
+          </div>
+        </dl>
+
+        <div class="hero__cta-row reveal" data-delay="620">
+          <a href="#ingressos" class="btn btn--wine btn--large">
+            Garantir meu ingresso
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#manchete" class="btn btn--ghost btn--large">Ler a programação</a>
+        </div>
+
+        <div class="hero__proof reveal" data-delay="720">
+          <div class="hero__avatars" aria-hidden="true">
+            <span style="--c1:#7A1F1F;--c2:#F4ECDB"></span>
+            <span style="--c1:#C18A2C;--c2:#2A1A12"></span>
+            <span style="--c1:#3B4A2E;--c2:#F4ECDB"></span>
+            <span style="--c1:#2A1A12;--c2:#C18A2C"></span>
+          </div>
+          <p>Mais de <strong>2 milhões</strong> de pessoas já foram impactadas pelas mensagens do Pr. Cláudio.</p>
+        </div>
+      </div>
+
+      <aside class="hero__visual">
+        <figure class="portrait reveal" data-delay="180">
+          <img src="images/pastor-hero.jpg" alt="Pastor Cláudio Duarte" />
+          <figcaption>
+            <span>§ Retrato</span>
+            <span><i>ao vivo</i></span>
+          </figcaption>
+        </figure>
+
+        <div class="countdown reveal" data-delay="360" id="countdown" aria-label="Contagem regressiva para o evento">
+          <span class="countdown__label">Faltam</span>
+          <div class="countdown__cells">
+            <div><strong data-cd="days">--</strong><small>dias</small></div>
+            <div><strong data-cd="hours">--</strong><small>horas</small></div>
+            <div><strong data-cd="mins">--</strong><small>min</small></div>
+            <div><strong data-cd="secs">--</strong><small>seg</small></div>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Casamento &nbsp;&nbsp;&middot;&nbsp;&nbsp; Família &nbsp;&nbsp;&middot;&nbsp;&nbsp; Filhos &nbsp;&nbsp;&middot;&nbsp;&nbsp; Riso &nbsp;&nbsp;&middot;&nbsp;&nbsp; Fé &nbsp;&nbsp;&middot;&nbsp;&nbsp; Propósito &nbsp;&nbsp;&middot;&nbsp;&nbsp; Casa &nbsp;&nbsp;&middot;&nbsp;&nbsp; Amor &nbsp;&nbsp;&middot;&nbsp;&nbsp; Reconciliação &nbsp;&nbsp;&middot;&nbsp;&nbsp;</span>
+        <span aria-hidden="true">Casamento &nbsp;&nbsp;&middot;&nbsp;&nbsp; Família &nbsp;&nbsp;&middot;&nbsp;&nbsp; Filhos &nbsp;&nbsp;&middot;&nbsp;&nbsp; Riso &nbsp;&nbsp;&middot;&nbsp;&nbsp; Fé &nbsp;&nbsp;&middot;&nbsp;&nbsp; Propósito &nbsp;&nbsp;&middot;&nbsp;&nbsp; Casa &nbsp;&nbsp;&middot;&nbsp;&nbsp; Amor &nbsp;&nbsp;&middot;&nbsp;&nbsp; Reconciliação &nbsp;&nbsp;&middot;&nbsp;&nbsp;</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== MANCHETE EDITORIAL ============== -->
+  <section id="manchete" class="lede">
+    <div class="container lede__grid">
+      <figure class="lede__media reveal">
+        <img src="images/claudio-duarte-falando.webp" alt="Pastor Cláudio Duarte falando ao público" />
+        <figcaption>§ Em cena · ao vivo</figcaption>
+      </figure>
+      <div class="lede__copy-col">
+        <span class="section-mark section-mark--dark">§ 01 · A noite</span>
+        <p class="lede__copy reveal">
+          Você vai <i>rir muito</i>. Mas, no meio da risada, vai ouvir verdades
+          que pouca gente tem coragem de dizer sobre <i>casamento</i>,
+          <i>filhos</i> e a vida em <i>família</i>. É essa a marca do Pastor
+          Cláudio — e a casa de quem ouve nunca mais é a mesma.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== O PASTOR ============== -->
+  <section id="pastor" class="pastor">
+    <div class="container pastor__grid">
+      <div class="pastor__copy">
+        <span class="kicker kicker--light"><span class="kicker__dot"></span> Quem é</span>
+        <h2 class="display display--md">
+          Pastor Cláudio<br/><i>Duarte</i>.
+        </h2>
+        <p>
+          Pastor, conferencista e um dos maiores comunicadores cristãos do
+          Brasil. Conhecido por unir humor afiado e profundidade bíblica, vem
+          ajudando milhares de famílias a se reconciliarem, a rirem juntas e a
+          se reconstruírem em torno daquilo que não pode ser perdido.
+        </p>
+        <p>
+          Seus vídeos somam <strong>centenas de milhões de visualizações</strong>
+          nas redes, e suas pregações lotam estádios e igrejas em todo o país.
+        </p>
+        <ul class="pastor__stats">
+          <li><strong>+30</strong><span>anos de ministério</span></li>
+          <li><strong>+2 mi</strong><span>seguidores</span></li>
+          <li><strong>+100</strong><span>cidades atendidas</span></li>
+        </ul>
+
+        <blockquote class="pull-quote">
+          <p>“Casa não cai por terremoto. Cai por <i>cupim</i> — pequeno, silencioso, todos os dias.”</p>
+          <cite>— Pr. Cláudio Duarte</cite>
+        </blockquote>
+      </div>
+      <figure class="pastor__media reveal">
+        <img src="images/pastor-palco.jpg" alt="Pastor Cláudio Duarte no palco" />
+        <figcaption>
+          <span>§ Retrato 02</span>
+          <span><i>@claudioduarte</i></span>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ============== PARA QUEM É ============== -->
+  <section class="for-who">
+    <div class="container">
+      <header class="section-head">
+        <span class="section-mark section-mark--dark">§ 02 · Para quem é</span>
+        <h2 class="display display--md">Esta noite é <i>pra você</i> que…</h2>
+      </header>
+
+      <ul class="for-who__list">
+        <li class="reveal">
+          <span class="for-who__num">01</span>
+          <p>quer reacender o amor e a cumplicidade no casamento.</p>
+        </li>
+        <li class="reveal">
+          <span class="for-who__num">02</span>
+          <p>está cansado de brigar pelos mesmos motivos em casa.</p>
+        </li>
+        <li class="reveal">
+          <span class="for-who__num">03</span>
+          <p>sente que perdeu a conexão com os filhos.</p>
+        </li>
+        <li class="reveal">
+          <span class="for-who__num">04</span>
+          <p>procura uma noite para rir, respirar e reencontrar Deus.</p>
+        </li>
+        <li class="reveal">
+          <span class="for-who__num">05</span>
+          <p>quer levar o cônjuge para um momento marcante a dois.</p>
+        </li>
+        <li class="reveal">
+          <span class="for-who__num">06</span>
+          <p>lidera, pastoreia ou aconselha famílias na sua igreja.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============== O QUE VAI VIVENCIAR ============== -->
+  <section class="promises">
+    <div class="container">
+      <header class="section-head">
+        <span class="section-mark">§ 03 · O que você vai levar pra casa</span>
+        <h2 class="display display--md">Quatro <i>marcas</i> que ficam.</h2>
+      </header>
+
+      <div class="promises__grid">
+        <article class="promise reveal">
+          <span class="promise__num">i.</span>
+          <h3>Casamento que volta a ser bom</h3>
+          <p>Princípios práticos para reaproximar marido e esposa, com graça, leveza e propósito.</p>
+        </article>
+        <article class="promise reveal">
+          <span class="promise__num">ii.</span>
+          <h3>Filhos formados com fé</h3>
+          <p>Como educar em uma geração distraída sem perder autoridade nem afeto.</p>
+        </article>
+        <article class="promise reveal">
+          <span class="promise__num">iii.</span>
+          <h3>Conflitos que viram conversa</h3>
+          <p>Ferramentas para parar de gritar, começar a ouvir e reconstruir laços feridos.</p>
+        </article>
+        <article class="promise reveal">
+          <span class="promise__num">iv.</span>
+          <h3>Riso que abre o coração</h3>
+          <p>O humor que desarma defesas e prepara o terreno para a Palavra entrar.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== PROVA SOCIAL ============== -->
+  <section class="testimonials">
+    <div class="container">
+      <header class="section-head">
+        <span class="section-mark section-mark--dark">§ 04 · O que dizem</span>
+        <h2 class="display display--md">Histórias de <i>antes</i> e <i>depois</i>.</h2>
+      </header>
+
+      <div class="testimonials__grid">
+        <figure class="testimonial reveal">
+          <blockquote>
+            “Saímos da palestra rindo de um lado, chorando do outro. No carro,
+            voltando, conversamos como não conversávamos há anos.”
+          </blockquote>
+          <figcaption>
+            <strong>Marcos &amp; Fernanda</strong>
+            <span>Casados há 14 anos · Goiânia</span>
+          </figcaption>
+        </figure>
+        <figure class="testimonial reveal">
+          <blockquote>
+            “É raro encontrar alguém que fale com tanto humor e ao mesmo tempo
+            te confronte de um jeito que dá pra ouvir.”
+          </blockquote>
+          <figcaption>
+            <strong>Pr. Daniel Souza</strong>
+            <span>Líder de família · Brasília</span>
+          </figcaption>
+        </figure>
+        <figure class="testimonial reveal">
+          <blockquote>
+            “Eu fui arrastada pela minha mãe. Saí decidida a procurar meu
+            ex-marido. Hoje a gente está casado de novo.”
+          </blockquote>
+          <figcaption>
+            <strong>Juliana R.</strong>
+            <span>Anápolis · GO</span>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== PROGRAMACAO ============== -->
+  <section id="programacao" class="schedule">
+    <div class="container">
+      <header class="section-head">
+        <span class="section-mark">§ 05 · Programa da noite</span>
+        <h2 class="display display--md">A <i>ordem</i> da noite.</h2>
+      </header>
+
+      <ol class="schedule__list">
+        <li class="reveal">
+          <span class="schedule__time">18h30</span>
+          <div class="schedule__body">
+            <h3>Abertura das portas</h3>
+            <p>Credenciamento, fotos e ambientação.</p>
+          </div>
+        </li>
+        <li class="reveal">
+          <span class="schedule__time">19h30</span>
+          <div class="schedule__body">
+            <h3>Boas-vindas e momento de louvor</h3>
+            <p>Tempo de adoração para preparar o coração.</p>
+          </div>
+        </li>
+        <li class="reveal">
+          <span class="schedule__time">20h00</span>
+          <div class="schedule__body">
+            <h3>Mensagem com Pr. Cláudio Duarte</h3>
+            <p>Fortalecendo Relacionamentos e Família — riso, palavra e propósito.</p>
+          </div>
+        </li>
+        <li class="reveal">
+          <span class="schedule__time">22h00</span>
+          <div class="schedule__body">
+            <h3>Ministração e oração final</h3>
+            <p>Momento de entrega, decisões e oração pelas famílias.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============== O LUGAR ============== -->
+  <section class="venue">
+    <div class="container venue__grid">
+      <div class="venue__copy">
+        <span class="section-mark section-mark--dark">§ 06 · O lugar</span>
+        <h2 class="display display--md">Igreja Esperança<br/><i>Campus</i>.</h2>
+        <p>
+          Aparecida de Goiânia — um espaço preparado para receber você e sua
+          família com conforto, segurança e estrutura para uma noite
+          inesquecível.
+        </p>
+        <ul class="venue__info">
+          <li><span>Endereço</span><strong>[Endereço completo, bairro]</strong></li>
+          <li><span>Estacionamento</span><strong>Disponível no local</strong></li>
+          <li><span>Acessibilidade</span><strong>Lugares reservados — solicite no checkout</strong></li>
+        </ul>
+        <a class="btn btn--ghost-dark" href="https://maps.google.com/?q=Igreja+Esperan%C3%A7a+Campus+Aparecida+de+Goi%C3%A2nia" target="_blank" rel="noopener">
+          Abrir no Google Maps
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg>
+        </a>
+      </div>
+      <figure class="venue__media reveal">
+        <img src="https://placehold.co/720x540/2A1A12/F4ECDB?text=Local+do+Evento" alt="Local do evento" />
+        <figcaption>§ Vista do local · Aparecida de Goiânia</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ============== INGRESSOS ============== -->
+  <section id="ingressos" class="tickets">
+    <div class="container">
+      <header class="section-head section-head--center">
+        <span class="section-mark">§ 07 · Ingressos</span>
+        <h2 class="display display--md">Garanta o <i>seu lugar</i>.</h2>
+        <p class="section-deck">
+          Lotes promocionais com vagas limitadas. À medida que enchem, o preço sobe.
+        </p>
+      </header>
+
+      <div class="tickets__row tickets__row--two">
+        <article class="ticket reveal">
+          <header class="ticket__head">
+            <span class="ticket__lot">Ingresso</span>
+            <h3>Individual</h3>
+          </header>
+          <div class="ticket__price">
+            <span class="ticket__price-from">por pessoa</span>
+            <strong>R$ 150</strong>
+            <span class="ticket__price-info">à vista · 12x no cartão</span>
+          </div>
+          <ul class="ticket__list">
+            <li>Acesso ao evento completo</li>
+            <li>Mensagem do Pr. Cláudio Duarte</li>
+            <li>Momento de louvor e oração</li>
+            <li>Ideal pra quem vai sozinho</li>
+          </ul>
+          <a href="https://pay.hotmart.com/SEU-LINK-INDIVIDUAL" class="btn btn--wine btn--block" target="_blank" rel="noopener">Comprar Individual</a>
+        </article>
+
+        <article class="ticket ticket--featured reveal">
+          <span class="ticket__ribbon">Recomendado</span>
+          <header class="ticket__head">
+            <span class="ticket__lot">Ingresso</span>
+            <h3>Casal</h3>
+          </header>
+          <div class="ticket__price">
+            <span class="ticket__price-from">os dois ingressos</span>
+            <strong>R$ 200</strong>
+            <span class="ticket__price-info">à vista · 12x no cartão</span>
+          </div>
+          <ul class="ticket__list">
+            <li>Dois ingressos pra você e seu cônjuge</li>
+            <li>Acesso ao evento completo</li>
+            <li>Mensagem do Pr. Cláudio Duarte</li>
+            <li>A noite que pode mudar a sua casa, juntos</li>
+          </ul>
+          <a href="https://pay.hotmart.com/SEU-LINK-CASAL" class="btn btn--amber btn--block" target="_blank" rel="noopener">Comprar Casal</a>
+        </article>
+      </div>
+
+      <ul class="tickets__seals">
+        <li>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6" width="18" height="13" rx="2"/><path d="M3 10h18"/></svg>
+          Pagamento Hotmart
+        </li>
+        <li>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3 6 6 1-4.5 4 1 6L12 16l-5.5 3 1-6L3 9l6-1z"/></svg>
+          Pix · Boleto · Cartão em 12x
+        </li>
+        <li>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-12V5l-8-3-8 3v5c0 8 8 12 8 12z"/></svg>
+          Reembolso garantido em 7 dias
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============== FAQ ============== -->
+  <section id="faq" class="faq">
+    <div class="container faq__inner">
+      <header class="section-head">
+        <span class="section-mark section-mark--dark">§ 08 · Dúvidas frequentes</span>
+        <h2 class="display display--md">Antes de garantir, <i>leia</i>.</h2>
+      </header>
+
+      <div class="faq__list">
+        <details>
+          <summary><span>Como recebo o meu ingresso?</span><span class="faq__plus" aria-hidden="true"></span></summary>
+          <p>Após a compra na Hotmart, você recebe o ingresso digital por e-mail. Basta apresentá-lo (impresso ou no celular) na entrada do evento.</p>
+        </details>
+        <details>
+          <summary><span>Crianças pagam?</span><span class="faq__plus" aria-hidden="true"></span></summary>
+          <p>Crianças até [X] anos não pagam, desde que acompanhadas dos pais ou responsável e sem ocupar assento individual. A partir dessa idade, é necessário ingresso.</p>
+        </details>
+        <details>
+          <summary><span>Posso parcelar?</span><span class="faq__plus" aria-hidden="true"></span></summary>
+          <p>Sim. A Hotmart permite parcelamento em até 12x no cartão de crédito. Pix e boleto também estão disponíveis.</p>
+        </details>
+        <details>
+          <summary><span>Tem reembolso se eu desistir?</span><span class="faq__plus" aria-hidden="true"></span></summary>
+          <p>Sim. Pela política da Hotmart, você tem até 7 dias após a compra para solicitar reembolso, conforme o Código de Defesa do Consumidor.</p>
+        </details>
+        <details>
+          <summary><span>O lugar é marcado?</span><span class="faq__plus" aria-hidden="true"></span></summary>
+          <p>Cadeira e VIP têm lugares marcados. Pista é por ordem de chegada.</p>
+        </details>
+        <details>
+          <summary><span>Vai ter transmissão online?</span><span class="faq__plus" aria-hidden="true"></span></summary>
+          <p>Não. Esse é um evento presencial e exclusivo para quem estiver em Aparecida de Goiânia.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== CTA FINAL ============== -->
+  <section class="closing">
+    <div class="container closing__inner">
+      <span class="section-mark">§ Fim de página</span>
+      <h2 class="display display--xl">
+        Não deixe a vaga<br/><i>passar</i>.
+      </h2>
+      <p>Os primeiros lotes acabam rápido. Garanta agora e leve <i>quem você ama</i>.</p>
+      <a href="#ingressos" class="btn btn--amber btn--xl">
+        Quero meu ingresso
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- ============== FOOTER ============== -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div>
+        <span class="footer__brand"><em>Cláudio Duarte</em> · Aparecida de Goiânia</span>
+        <p>Fortalecendo Relacionamentos e Família — uma noite presencial e inesquecível.</p>
+      </div>
+      <div>
+        <h4>Navegue</h4>
+        <ul>
+          <li><a href="#manchete">A noite</a></li>
+          <li><a href="#pastor">O pastor</a></li>
+          <li><a href="#programacao">Programação</a></li>
+          <li><a href="#ingressos">Ingressos</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contato</h4>
+        <ul>
+          <li><a href="mailto:contato@exemplo.com">contato@exemplo.com</a></li>
+          <li><a href="https://wa.me/55" target="_blank" rel="noopener">WhatsApp</a></li>
+          <li><a href="https://instagram.com/claudioduarte" target="_blank" rel="noopener">@claudioduarte</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© <span id="year"></span> · Todos os direitos reservados.</span>
+      <span>Pagamentos processados pela Hotmart.</span>
+    </div>
+  </footer>
+
+  <!-- ============== STICKY MOBILE CTA ============== -->
+  <a href="#ingressos" class="sticky-cta">
+    Garantir ingresso
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+  </a>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
